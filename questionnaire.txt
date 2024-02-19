@@ -1,0 +1,198 @@
+Assignment Questionnaire
+========================
+
+NOTE: DO NOT DELETE --> and <--, and place your answers within the marks.
+  Example:
+    -->
+      https://cs6262.gtisc.gatech.edu
+    <--
+
+
+Info
+====
+
+Example:
+  Your GT Username: kpark21
+
+-->username
+  Your Username: 
+<--
+
+Task 1 (5%)
+=======
+
+1. Which of the following options can adjust iframe’s width and height correctly?
+  A. <iframe src=”https://gatech.edu” width=”100%” height=”100%”></iframe>
+  B. <iframe src=”https://gatech.edu” width=”100px” height=”100px”></iframe>
+  C. <iframe src=”https://gatech.edu” style=”width:100%;height:100%”></iframe>
+  D. All of above
+
+Example:
+  Answer: A
+
+-->task_1_1
+  Answer: 
+<--
+
+2. In order for the <a> tag to open a new tab/window when clicked, what value should you set for the target attribute? 
+(The answer should only contain the value itself). This is necessary for task 5.3.
+
+Example:
+  Answer: something
+
+-->task_1_2
+  Answer: 
+<--
+
+3. You will see three alerts after running the code below. What numbers you will see in sequence?
+The answer should be 3 numbers separated by commas with no space, e.g. 1,1,1. 
+Think about why that is the case. You will use this technique in task 5.2.
+
+for (var i = 0; i < 3; i++) {
+  const promise = new Promise((resolve, reject) => {
+        setTimeout(resolve, 1000 + i*1000)
+  });
+  promise.then(() => alert(i));
+}
+
+Example:
+  Answer: 1,1,1
+
+-->task_1_3
+  Answer: 
+<--
+
+4. Which of the following can set jsScript to string correctly? Understanding how HTML code is parsed is important.
+This question is related to task 3.
+  A  <script>let jsScript=<script>a=2</script></script>
+  B  <script>let jsScript='<script>a=2</script>'</script>
+  C  <script>let jsScript='<script>a=2<\/script>'</script>
+  D  None of above
+
+Example:
+  Answer: A
+
+-->task_1_4
+  Answer: 
+<--
+
+5. Fetch is an api which makes use of promises to send web requests. It is supported by most major web browsers.
+Study the use of fetch api and try to make a POST request to your Message Receiver Endpoint with payload body being {username: your-GT-username}, e.g. {username: abc123}. 
+What is the hash string you get after POSTing to your endpoint?
+
+Example:
+  Answer: ahashstring1235...
+
+-->task_1_5
+  Answer: 
+<--
+
+Task 2  (10%)
+=======
+
+1. What is the URL that you can use to exploit the reflected-XSS vulnerability?
+
+Example:
+  URL: https://cs6262.gtisc.gatech.edu/vulnerable/endpoint/?payload
+
+-->task_2
+  URL: 
+<--
+
+
+Task 3  (15%)
+=======
+
+1. What is the URL that you can use to exploit the persistent-client XSS vulnerability?
+
+Example:
+  URL: https://cs6262.gtisc.gatech.edu/vulnerable/endpoint/?payload
+
+-->task_3
+  URL: 
+<--
+
+
+Task 4 (20%)
+=======
+
+1. What is the hash string you get as admin 
+
+Example:
+  Hash: 0c307979...
+
+-->task_4_1
+  Hash: 
+<--
+
+2. What is the endpoint to retrive the hash?
+Example:
+  URL: https://cs6262.gtisc.gatech.edu/vulnerable/endpoint
+
+-->task_4_2
+  URL: 
+<--
+
+3. Your injected payload. The whole thing you submitted to the backend.
+It's ok to put it in multi-lines.
+
+Example:
+  Payload : whatever <script>
+  your code
+  </script> whatever
+
+-->task_4_3
+  Payload: 
+<--
+
+
+Task 5 (45%)
+=======
+
+1.1 What is the hash string you see by a successful ReDoS attack?
+
+Example:
+  Hash: fdsaf23vcx3r23...
+
+-->task_5_1_1
+  Hash: 
+<--
+
+1.2. What is the username and password used for such a ReDoS attack?
+
+Example:
+  Username: user
+  Password: password
+
+-->task_5_1_2
+  Username: 
+  Password: 
+<--
+
+2. What are the local web server's IP addresses? Report them in the format of
+ip1,ip2,ip3,...
+
+Example:
+  IP Addresses: 123.123.123.1,123.123.123.2,...
+
+-->task_5_2
+  IP Addresses: 
+<--
+
+3.1 What is the URL you used to launch a tabnabbing attack?
+
+Example:
+  URL: https://cs6262.gtisc.gatech.edu/vulnerable/endpoint/?payload
+
+-->task_5_3_1
+  URL: 
+<--
+
+3.2 What is the hash string you see by a successful tabnabbing attack?
+
+Example:
+  Hash: fdsaf23vcx3r23...
+
+-->task_5_3_2
+  Hash: 
+<--
